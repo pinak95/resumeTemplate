@@ -1,0 +1,149 @@
+%-------------------------
+% Resume Template in LaTeX
+% Author: Pinak Thakar
+% Website: pinakthakar.codes
+% License: MIT
+%-------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+% URL style
+\urlstyle{same}
+
+% Text formatting
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}: #2 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={$\bullet$}, leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%%%%%% CV STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \textbf{{\LARGE Your Name}} & \textbf{Mobile:} Your Phone Number \\
+  \href{https://www.linkedin.com/in/your-profile}{\textbf{LinkedIn:} \textcolor{blue}{linkedin.com/in/your-profile}} & \textbf{GitHub:} \href{https://github.com/your-username}{\textcolor{blue}{github.com/your-username}} \\
+  \href{mailto:your-email@example.com}{\textbf{Email:} \textcolor{blue}{your-email@example.com}} & \textbf{Portfolio:} \href{https://your-portfolio.com}{\textcolor{blue}{your-portfolio.com}}
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{\textbf{{\LARGE Education}}}
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Your University/College}{Location}
+  {Degree - Major; CGPA: Your CGPA/GPA}{Month Year - Month Year}
+  \resumeSubheading
+  {Your Higher Secondary School}{Location}
+  {Higher Secondary Certificate (HSC); Percentage: Your Percentage}{Month Year - Month Year}
+  \resumeSubheading
+  {Your Secondary School}{Location}
+  {Secondary School Certificate (SSC); Percentage: Your Percentage}{Month Year - Month Year}
+\resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{\textbf{{\LARGE Programming Skills}}}
+\begin{description}[font=$\bullet$]
+\item{\textbf{Languages}: Your Languages}
+  \item{\textbf{Frameworks}: Your Frameworks}
+  \item{\textbf{Databases}: Your Databases}
+  \item{\textbf{Tools}: Your Tools}
+\end{description}
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{{\LARGE Experience}}}
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Company/Organization}{Location}
+  {Your Job Title}{Month Year - Month Year}
+  \resumeItemListStart
+    \resumeItem{Responsibility}
+    {Description of your responsibilities}
+    \resumeItem{Accomplishment}
+    {Description of your accomplishment}
+    \resumeItem{Achievement}
+    {Description of your achievement}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{\textbf{{\LARGE Projects}}}
+\begin{description}[font=$\bullet$]
+  \item{\textbf{Project 1 Title}}
+  \resumeItemListStart
+    \item Description of your project
+  \resumeItemListEnd
+  \textbf{Tech}: Technologies used for Project 1
+  \hfill \textcolor{blue}{\href{https://project1-link}{Check it out...}}
+  
+  \item{\textbf{Project 2 Title}}
+  \resumeItemListStart
+    \item Description of your project
+  \resumeItemListEnd
+  \textbf{Tech}: Technologies used for Project 2
+  \hfill \textcolor{blue}{\href{https://project2-link}{Check it out...}}
+  
+  \item{\textbf{Project 3 Title}}
+  \resumeItemListStart
+    \item Description of your project
+  \resumeItemListEnd
+  \textbf{Tech}: Technologies used for Project 3
+  \hfill \textcolor{blue}{\href{https://project3-link}{Check it out...}}
+\end{description}
+
+
+%-----------ACHIEVEMENTS------------
+\section{\textbf{{\LARGE Achievements}}}
+\begin{itemize}[label={$\bullet$}, leftmargin=*]
+\item Your achievement 1
+\item Your achievement 2
+\item Your achievement 3
+\item Your achievement 4
+\end{itemize}
+
+\end{document}
