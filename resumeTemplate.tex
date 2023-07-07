@@ -46,7 +46,7 @@
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Custom commands
-\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}: #2 \vspace{-2pt}}}
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1} #2 \vspace{-2pt}}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
   \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -67,20 +67,38 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
-  \textbf{{\LARGE Your Name}} & \textbf{Mobile:} Your Phone Number \\
-  \href{https://www.linkedin.com/in/your-profile}{\textbf{LinkedIn:} \textcolor{blue}{linkedin.com/in/your-profile}} & \textbf{GitHub:} \href{https://github.com/your-username}{\textcolor{blue}{github.com/your-username}} \\
-  \href{mailto:your-email@example.com}{\textbf{Email:} \textcolor{blue}{your-email@example.com}} & \textbf{Portfolio:} \href{https://your-portfolio.com}{\textcolor{blue}{your-portfolio.com}}
+
+  %------------Enter your name----------------
+  \textbf{{\LARGE Your Name}} & 
+  
+  %------------Enter your phone number-----------------------
+  \textbf{Mobile:} Your Phone Number \\
+
+  %-----------------------Enter your linkedin profile link in href and the text to be displayed-----------
+  \textbf{LinkedIn:} \href{https://www.linkedin.com/in/your-profile}{\textcolor{blue} {linkedin.com/in/your-profile}} & 
+  
+  %-----------------------Enter your github porfile link in href and the the text to displayed---------
+  \textbf{GitHub:} \href{https://github.com/your-username}{\textcolor{blue}{github.com/your-username}} \\
+
+  %-----------------------Enter your mail link in href after the mailto and the text to displayed--------
+  \textbf{Email:} \href{mailto:your-email@example.com} {\textcolor{blue}{your-email@example.com}} & \textbf{Portfolio:} \href{https://your-portfolio.com}{\textcolor{blue}{your-portfolio.com}}
 \end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{\textbf{{\LARGE Education}}}
 \resumeSubHeadingListStart
+
+%--------------Enter your University/College, Location, Degree, CGPA, and the month-year-------------------
   \resumeSubheading
   {Your University/College}{Location}
   {Degree - Major; CGPA: Your CGPA/GPA}{Month Year - Month Year}
+
+  %--------------Enter your Higher Secondary School, Location, Degree, GPA, and the month-year-------------------
   \resumeSubheading
   {Your Higher Secondary School}{Location}
   {Higher Secondary Certificate (HSC); Percentage: Your Percentage}{Month Year - Month Year}
+
+  %--------------Enter your Secondary School, Location, Degree, GPA, and the month-year-------------------
   \resumeSubheading
   {Your Secondary School}{Location}
   {Secondary School Certificate (SSC); Percentage: Your Percentage}{Month Year - Month Year}
@@ -89,24 +107,38 @@
 %--------PROGRAMMING SKILLS------------
 \section{\textbf{{\LARGE Programming Skills}}}
 \begin{description}[font=$\bullet$]
+
+%---------------Enter the languages you have worked with till date-----------------
 \item{\textbf{Languages}: Your Languages}
-  \item{\textbf{Frameworks}: Your Frameworks}
-  \item{\textbf{Databases}: Your Databases}
-  \item{\textbf{Tools}: Your Tools}
+
+%---------------Enter the frameworks you have worked with till date---------------
+\item{\textbf{Frameworks}: Your Frameworks}
+  
+%---------------Enter the databases you have worked with till date-----------------  
+\item{\textbf{Databases}: Your Databases}
+
+%---------------Enter the tools you have worked with till date--------------------
+\item{\textbf{Tools}: Your Tools}
 \end{description}
 
 %-----------EXPERIENCE-----------------
 \section{\textbf{{\LARGE Experience}}}
+
+%--------------------------If you want to enter a new Experience then copy the code from here to \resumeSubHeadingListEnd
 \resumeSubHeadingListStart
+
+%----------Enter the company/organization that you have worked under-------------------------------
   \resumeSubheading
   {Company/Organization}{Location}
   {Your Job Title}{Month Year - Month Year}
+
+%----------You can remove the keywords Responsibility if you like and enter the descriptions of the projects-------------------
   \resumeItemListStart
-    \resumeItem{Responsibility}
+    \resumeItem{Responsibility: }
     {Description of your responsibilities}
-    \resumeItem{Accomplishment}
+    \resumeItem{Accomplishment: }
     {Description of your accomplishment}
-    \resumeItem{Achievement}
+    \resumeItem{Achievement: }
     {Description of your achievement}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
@@ -114,20 +146,24 @@
 %-----------PROJECTS-----------------
 \section{\textbf{{\LARGE Projects}}}
 \begin{description}[font=$\bullet$]
+
+%--------------------------Enter the project title and the description about the projects, tech stack used, and the link of the project----------
   \item{\textbf{Project 1 Title}}
   \resumeItemListStart
     \item Description of your project
   \resumeItemListEnd
   \textbf{Tech}: Technologies used for Project 1
   \hfill \textcolor{blue}{\href{https://project1-link}{Check it out...}}
-  
+
+%--------------------------Enter the project title and the description about the projects, tech stack used, and the link of the project----------  
   \item{\textbf{Project 2 Title}}
   \resumeItemListStart
     \item Description of your project
   \resumeItemListEnd
   \textbf{Tech}: Technologies used for Project 2
   \hfill \textcolor{blue}{\href{https://project2-link}{Check it out...}}
-  
+
+%--------------------------Enter the project title and the description about the projects, tech stack used, and the link of the project----------  
   \item{\textbf{Project 3 Title}}
   \resumeItemListStart
     \item Description of your project
@@ -136,14 +172,18 @@
   \hfill \textcolor{blue}{\href{https://project3-link}{Check it out...}}
 \end{description}
 
+%--------------------------If you want to add a new project copy from \item to \hfill \textcolor{color}{\href[options]{URL}{text}}
 
 %-----------ACHIEVEMENTS------------
 \section{\textbf{{\LARGE Achievements}}}
 \begin{itemize}[label={$\bullet$}, leftmargin=*]
+
+%---------------Describe your achievements and if you like to add new then use the \item command----------  
 \item Your achievement 1
 \item Your achievement 2
 \item Your achievement 3
 \item Your achievement 4
+\item Your achievement 5 
 \end{itemize}
 
 \end{document}
